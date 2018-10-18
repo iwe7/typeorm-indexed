@@ -5,3 +5,4 @@ export * from './utils';
 export * from './decorators';
 import { ConnectionManager } from './connection';
 export default ConnectionManager;
+export * from './store';

@@ -9,4 +9,5 @@ tslib_1.__exportStar(require("./utils"), exports);
 tslib_1.__exportStar(require("./decorators"), exports);
 const connection_1 = require("./connection");
 exports.default = connection_1.ConnectionManager;
+tslib_1.__exportStar(require("./store"), exports);
 //# sourceMappingURL=index.js.map

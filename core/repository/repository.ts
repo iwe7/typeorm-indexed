@@ -80,7 +80,7 @@ export class Repository<T = any> {
     return this._handler<T>(this.store.put(value, key));
   }
 
-  // 检查是否重复 然后更新或插入
+  // 符合操作
   save<T = any>(value: any, key?: IDBValidKey | IDBKeyRange): Observable<T> {
     return this.hasValue(value).pipe(
       switchMap(res => {
@@ -119,7 +119,7 @@ export class Repository<T = any> {
   }
 
   indexs: { [key: string]: RepositoryIndex } = {};
-
+  // 符合操作
   remove<T = any>(key: IDBValidKey | IDBKeyRange): Observable<T> {
     return this.delete(key);
   }

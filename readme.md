@@ -42,3 +42,9 @@ Manager.ready().subscribe(res => {
   }
 });
 ```
+
+### 操作单条数据
+
+```ts
+import { update, insert, get, remove } from 'typeorm-indexed';
+```
