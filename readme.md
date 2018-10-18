@@ -1,7 +1,5 @@
-
 ```ts
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm-indexed';
-// 多个页面组合-应用
 @Entity()
 export class App {
   @PrimaryGeneratedColumn()
@@ -25,6 +23,7 @@ export class App {
 ```
 
 使用
+
 ```ts
 import Manager, { createConnection, select } from 'typeorm-indexed';
 
